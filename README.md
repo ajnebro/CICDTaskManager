@@ -73,11 +73,14 @@ This repository includes three approaches to CI/CD with GitHub Actions, so you c
 ### Example: Badges for each approach
 
 
-**Multi Job (badge text = workflow name, includes code coverage):**
+**Multi Job (badge text = workflow name, includes code coverage and Javadoc):**
 
 ![Multi Job Workflow](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main)
 
-This workflow also includes a code coverage stage using JaCoCo. The coverage report is uploaded as an artifact and can be used to teach students about test coverage and code quality.
+This workflow also includes:
+- A code coverage stage using JaCoCo. The coverage report is uploaded as an artifact and can be used to teach students about test coverage and code quality.
+- A Javadoc stage that generates API documentation and uploads it as an artifact, illustrating automated documentation in CI/CD.
+
 
 **One Workflow per Stage (badge text = stage name):**
 
@@ -85,6 +88,9 @@ This workflow also includes a code coverage stage using JaCoCo. The coverage rep
 ![Test](https://github.com/ajnebro/CICDTaskManager/actions/workflows/test.yml/badge.svg?branch=main)
 ![Build](https://github.com/ajnebro/CICDTaskManager/actions/workflows/build.yml/badge.svg?branch=main)
 ![Integration Test](https://github.com/ajnebro/CICDTaskManager/actions/workflows/integration-test.yml/badge.svg?branch=main)
+![Javadoc](https://github.com/ajnebro/CICDTaskManager/actions/workflows/javadoc.yml/badge.svg?branch=main)
+
+There is also an independent workflow for Javadoc generation, with its own badge. This demonstrates how documentation can be automated and tracked separately in CI/CD.
 
 > Note: The badge text for multi-job workflows always shows the workflow name, not the job name. With one workflow per stage, the badge text matches the stage name, which is useful for teaching and documentation.
 
