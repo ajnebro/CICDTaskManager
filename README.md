@@ -61,11 +61,12 @@ src/test/java/org/iips/actions/
 ```
 
 
+
 ## CI/CD Workflows: Single Job, Multi Job, and One Workflow per Stage
 
 This repository includes three approaches to CI/CD with GitHub Actions, so you can compare their structure and badge behavior:
 
-- **Single Job** (`ci-single-job.yml`): All stages (compile, test, build, integration) run as steps within a single job. Simpler and sufficient for small projects, but limits visibility and control per stage.
+- **Single Job** (`ci-single-job.yml`): All stages (compile, test, build, integration) run as steps within a single job. This workflow uses a matrix to run on multiple operating systems (`ubuntu-latest`, `windows-latest`, `macos-latest`) and Java versions (21, 25), demonstrating how to test portability and compatibility across platforms and JDKs. Simpler and sufficient for small projects, but limits visibility and control per stage.
 - **Multi Job** (`ci-multi-job.yml`): Each stage runs in a separate job, allowing more parallelism, control, and visibility (e.g., per-job badge integration and dependency management between stages). The badge text always shows the workflow name, not the job name.
 - **One Workflow per Stage** (`compile.yml`, `test.yml`, `build.yml`, `integration-test.yml`): Each stage has its own workflow file. This allows each badge to show the name of the stage (workflow), making it clearer for educational purposes.
 
