@@ -1,0 +1,20 @@
+# Archivos y carpetas ignorados para proyectos Java/Maven
+
+# Maven
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Archivos de configuración de IDE
+*.iml
+.idea/
+*.classpath
+*.project
+
+# Archivos del sistema
+.DS_Store
+
+# Logs
+*.log
+
+# Otros
+*.swp
