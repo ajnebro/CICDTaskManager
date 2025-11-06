@@ -26,16 +26,16 @@ jobs:
         run: echo "JAVA_HOME=$JAVA_HOME" >> $GITHUB_ENV
 
       - name: Compile
-        run: mvn compile --batch-mode
+        run: $JAVA_HOME/bin/mvn compile --batch-mode
 
       - name: Run unit tests
-        run: mvn test --batch-mode
+        run: $JAVA_HOME/bin/mvn test --batch-mode
 
       - name: Build JAR
-        run: mvn package --batch-mode
+        run: $JAVA_HOME/bin/mvn package --batch-mode
 
       - name: Run integration tests
-        run: mvn integration-test --batch-mode
+        run: $JAVA_HOME/bin/mvn integration-test --batch-mode
 
       - name: Upload test results
         if: always()
