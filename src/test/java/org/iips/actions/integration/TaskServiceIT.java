@@ -21,8 +21,7 @@ import static org.mockito.Mockito.*;
 
 @DisplayName("TaskService Integration Tests (Top-Down, Mockito)")
 class TaskServiceIT {
-  @Mock
-  TaskRepository repository;
+  @Mock TaskRepository repository;
 
   @InjectMocks TaskService service;
 
