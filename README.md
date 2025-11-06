@@ -1,8 +1,3 @@
-# Gestor de Tareas
-
-Este proyecto es un ejemplo educativo de un gestor de tareas en Java 21 usando Maven. 
-
-└── integration/
 # Task Manager
 
 This project is an educational example of a task manager implemented in Java 21 using Maven.
@@ -77,12 +72,10 @@ This repository includes two versions of the GitHub Actions workflow to illustra
 
 You can add a badge for each job using the following syntax:
 
-```
 ![Compile](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=compile)
 ![Test](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=test)
 ![Build](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=build)
 ![Integration Test](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=integration-test)
-```
 
 ## How to build and test
 
