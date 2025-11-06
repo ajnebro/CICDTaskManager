@@ -72,12 +72,12 @@ This repository includes three approaches to CI/CD with GitHub Actions, so you c
 
 ### Example: Badges for each approach
 
-**Multi Job (badge text = workflow name):**
 
-![Compile](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=compile)
-![Test](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=test)
-![Build](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=build)
-![Integration Test](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main&job=integration-test)
+**Multi Job (badge text = workflow name, includes code coverage):**
+
+![Multi Job Workflow](https://github.com/ajnebro/CICDTaskManager/actions/workflows/ci-multi-job.yml/badge.svg?branch=main)
+
+This workflow also includes a code coverage stage using JaCoCo. The coverage report is uploaded as an artifact and can be used to teach students about test coverage and code quality.
 
 **One Workflow per Stage (badge text = stage name):**
 
